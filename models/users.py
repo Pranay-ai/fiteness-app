@@ -12,5 +12,7 @@ class User(Base):
     is_coach = Column(Integer, default=0) 
     classes_created = relationship("FitnessClass", back_populates="instructor")
 
+    bookings = relationship("Booking", back_populates="user", cascade="all, delete-orphan")
+
 
 

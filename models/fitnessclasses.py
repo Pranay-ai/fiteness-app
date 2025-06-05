@@ -12,5 +12,5 @@ class FitnessClass(Base):
     start_time = Column(DateTime, nullable=False)
     end_time = Column(DateTime, nullable=False)
     available_slots = Column(Integer, nullable=False)
-
     instructor = relationship("User", back_populates="classes_created")
+    bookings = relationship("Booking", back_populates="fitness_class", cascade="all, delete-orphan")

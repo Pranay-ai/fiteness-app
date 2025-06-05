@@ -1,5 +1,5 @@
 import bcrypt
-import jwt
+from jose import jwt
 from sqlalchemy.orm import Session
 from datetime import datetime, timedelta
 from fastapi import HTTPException, status

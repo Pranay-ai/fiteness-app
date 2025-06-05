@@ -16,6 +16,7 @@ app = FastAPI(lifespan=lifespan)
 
 app.include_router(routers.user_router)
 app.include_router(routers.fitnessclass_router)
+app.include_router(routers.booking_router)
 
 
 @app.get("/")
