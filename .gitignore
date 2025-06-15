@@ -1,5 +1,7 @@
-.env
+env
 
 test.db
 
 venv
+
+__pycache__/
